@@ -3,6 +3,8 @@
 本仓库基于 [Few-shot Class Incremental Learning with Attention-Aware Self-Adaptive Prompt](https://arxiv.org/pdf/2403.09857)（ECCV2024），
 并集成 [Diffusion-Driven Data Replay: A Novel Approach to Combat Forgetting in Federated Class Continual Learning (ECCV 2024 Oral)](https://github.com/jinglin-liang/DDDR) 的扩展代码，用于数据增强与增量学习研究。
 
+![ASP 算法结构](fig/alg.png)
+
 ---
 
 ## 📚 代码结构及来源
@@ -41,7 +43,17 @@ CUDA_VISIBLE_DEVICES=1 python main.py --config=./exps/cifar.json
 
 ---
 
+## 主要性能对比
+
+ASP 在各主流小样本增量学习基线任务上均取得显著提升：  
+![ASP 主要实验对比结果](fig/main_result.png)
+
+---
+
 ## 🎨 Diffusion 驱动数据合成/重放（DDDR）
+
+下图为 DDDR Diffusion 重放整体方法流程：  
+![DDDR 方法框架](fig/dddr_framework.png)
 
 ### 整体流程
 
