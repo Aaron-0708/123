@@ -1,0 +1,1141 @@
+nohup: ignoring input
+2025-01-11 11:44:53,742 [trainer.py] => config: ldm/ldm_dddr.yaml
+2025-01-11 11:44:53,742 [trainer.py] => model_name: asp
+2025-01-11 11:44:53,742 [trainer.py] => backbone_type: pretrained_vit_b16_224_vpt
+2025-01-11 11:44:53,742 [trainer.py] => device: ['cuda']
+2025-01-11 11:44:53,742 [trainer.py] => seed: 2024
+2025-01-11 11:44:53,742 [trainer.py] => dataset: cifar224
+2025-01-11 11:44:53,743 [trainer.py] => init_cls: 60
+2025-01-11 11:44:53,743 [trainer.py] => increment: 5
+2025-01-11 11:44:53,743 [trainer.py] => kshot: 5
+2025-01-11 11:44:53,743 [trainer.py] => generator_model: CIFAR_GEN
+2025-01-11 11:44:53,743 [trainer.py] => z_dim: 1000
+2025-01-11 11:44:53,743 [trainer.py] => conv_dim: 64
+2025-01-11 11:44:53,743 [trainer.py] => img_size: 224
+2025-01-11 11:44:53,743 [trainer.py] => generator_lr: 0.005
+2025-01-11 11:44:53,743 [trainer.py] => pi: 100
+2025-01-11 11:44:53,743 [trainer.py] => w_bn: 50.0
+2025-01-11 11:44:53,743 [trainer.py] => w_noise: 0.001
+2025-01-11 11:44:53,743 [trainer.py] => server_ss: 32
+2025-01-11 11:44:53,743 [trainer.py] => bn_loss: 1
+2025-01-11 11:44:53,743 [trainer.py] => noise: 1
+2025-01-11 11:44:53,743 [trainer.py] => ie_loss: 1
+2025-01-11 11:44:53,743 [trainer.py] => act_loss: 0
+2025-01-11 11:44:53,743 [trainer.py] => w_ie: 1.0
+2025-01-11 11:44:53,743 [trainer.py] => w_act: 0.1
+2025-01-11 11:44:53,743 [trainer.py] => syn_size: 32
+2025-01-11 11:44:53,743 [trainer.py] => need_syn_imgs: True
+2025-01-11 11:44:53,743 [trainer.py] => g_local_bs: 5
+2025-01-11 11:44:53,743 [trainer.py] => ldm_ckpt: models/ldm/text2img-large/model.ckpt
+2025-01-11 11:44:53,743 [trainer.py] => g_local_train_steps: 5
+2025-01-11 11:44:53,743 [trainer.py] => dataset_syn: cifar100
+2025-01-11 11:44:53,743 [trainer.py] => com_round_gen: 10
+2025-01-11 11:44:53,743 [trainer.py] => g_sigma: 0
+2025-01-11 11:44:53,743 [trainer.py] => save_cls_embeds: False
+2025-01-11 11:44:53,743 [trainer.py] => syn_image_path: outputs/syn_image_60_5_pre0.0_local_bs5
+2025-01-11 11:44:53,743 [trainer.py] => save_dir: outputs
+2025-01-11 11:44:53,743 [trainer.py] => n_iter: 5
+2025-01-11 11:44:53,743 [trainer.py] => num_users: 1
+2025-01-11 11:44:53,743 [trainer.py] => cur_size: 50
+2025-01-11 11:44:53,743 [trainer.py] => local_bs: 5
+2025-01-11 11:44:53,744 [trainer.py] => pre_size: 48
+2025-01-11 11:44:53,744 [trainer.py] => w_ce_pre: 0
+2025-01-11 11:44:53,744 [trainer.py] => vpt_type: Deep
+2025-01-11 11:44:53,744 [trainer.py] => prompt_token_num: 6
+2025-01-11 11:44:53,744 [trainer.py] => avg_alpha: 0.8
+2025-01-11 11:44:53,744 [trainer.py] => perturb_var: 1
+2025-01-11 11:44:53,744 [trainer.py] => EMA_beta: 0.99
+2025-01-11 11:44:53,744 [trainer.py] => anchor_lambda: 0.1
+2025-01-11 11:44:53,744 [trainer.py] => kl_weight: 0.001
+2025-01-11 11:44:53,744 [trainer.py] => TIP_init: zero
+2025-01-11 11:44:53,744 [trainer.py] => tuned_epoch: 10
+2025-01-11 11:44:53,744 [trainer.py] => fs_epoch: 0
+2025-01-11 11:44:53,744 [trainer.py] => init_lr: 0.01
+2025-01-11 11:44:53,744 [trainer.py] => fs_lr: 0.001
+2025-01-11 11:44:53,744 [trainer.py] => batch_size: 5
+2025-01-11 11:44:53,744 [trainer.py] => fs_batch_size: 5
+2025-01-11 11:44:53,744 [trainer.py] => weight_decay: 0.0005
+2025-01-11 11:44:53,744 [trainer.py] => min_lr: 0
+2025-01-11 11:44:53,744 [trainer.py] => optimizer: sgd
+2025-01-11 11:44:53,744 [trainer.py] => memory_size: 0
+2025-01-11 11:44:53,744 [trainer.py] => memory_per_class: 0
+2025-01-11 11:44:53,744 [trainer.py] => fixed_memory: False
+2025-01-11 11:44:53,744 [trainer.py] => shuffle: False
+2025-01-11 11:44:53,744 [trainer.py] => top_k: 5
+2025-01-11 11:44:53,744 [trainer.py] => base_model_path: saved_model/asp/cifar224/60_5/asp_10_2024_pretrained_vit_b16_224_vpt.pth
+2025-01-11 11:44:53,744 [trainer.py] => prefix: asp
+2025-01-11 11:44:53,744 [trainer.py] => model_prefix: asp
+Files already downloaded and verified
+Files already downloaded and verified
+2025-01-11 11:44:55,369 [data_manager.py] => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+/mnt/share/yinjunhui/anaconda3/envs/cl/lib/python3.9/site-packages/fairscale/experimental/nn/offload.py:19: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  return torch.cuda.amp.custom_fwd(orig_func)  # type: ignore
+/mnt/share/yinjunhui/anaconda3/envs/cl/lib/python3.9/site-packages/fairscale/experimental/nn/offload.py:30: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  return torch.cuda.amp.custom_bwd(orig_func)  # type: ignore
+/mnt/share/yinjunhui/anaconda3/envs/cl/lib/python3.9/site-packages/pytorch_lightning/metrics/__init__.py:43: LightningDeprecationWarning: `pytorch_lightning.metrics.*` module has been renamed to `torchmetrics.*` and split off to its own package (https://github.com/PyTorchLightning/metrics) since v1.3 and will be removed in v1.5
+  rank_zero_deprecation(
+2025-01-11 11:44:56.584272: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-01-11 11:44:56.596839: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-01-11 11:44:56.600725: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-01-11 11:44:56.612770: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-01-11 11:44:57.392191: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+This is for the BaseNet initialization.
+modelname, pretrained_vit_b16_224_vpt basicmodelname vit_base_patch16_224
+Using VPT model
+Using Deep Prompt
+After BaseNet initialization.
+2025-01-11 11:45:04,184 [trainer.py] => All params: 173596160
+2025-01-11 11:45:04,185 [trainer.py] => Trainable params: 1998848
+/mnt/share/yinjunhui/cl/FSCIL-Diff/ldm/models/diffusion/ddpm.py:197: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  sd = torch.load(path, map_location="cpu")
+/mnt/share/yinjunhui/cl/FSCIL-Diff/models/asp.py:505: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(self.args['ldm_ckpt'], map_location="cpu")["state_dict"],
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 11:45:20,620 [asp.py] => Learning on 0-60
+2025-01-11 11:45:20,682 [asp.py] => training set size: 30000, fc construct set size: 30000
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:33<02:14, 33.64s/it][A
+Sampling:  40%|████      | 2/5 [01:08<01:43, 34.46s/it][A
+Sampling:  60%|██████    | 3/5 [01:45<01:10, 35.34s/it][A
+Sampling:  80%|████████  | 4/5 [02:22<00:36, 36.11s/it][A
+Sampling: 100%|██████████| 5/5 [03:00<00:00, 36.69s/it][ASampling: 100%|██████████| 5/5 [03:00<00:00, 36.01s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:31, 37.93s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:53, 37.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.91s/it][A
+Sampling:  80%|████████  | 4/5 [02:31<00:37, 37.82s/it][A
+Sampling: 100%|██████████| 5/5 [03:09<00:00, 37.73s/it][ASampling: 100%|██████████| 5/5 [03:09<00:00, 37.80s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:31, 37.93s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:53, 37.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.93s/it][A
+Sampling:  80%|████████  | 4/5 [02:31<00:37, 37.96s/it][A
+Sampling: 100%|██████████| 5/5 [03:09<00:00, 37.91s/it][ASampling: 100%|██████████| 5/5 [03:09<00:00, 37.93s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:38<02:32, 38.03s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:53, 37.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.93s/it][A
+Sampling:  80%|████████  | 4/5 [02:32<00:38, 38.09s/it][A
+Sampling: 100%|██████████| 5/5 [03:09<00:00, 37.94s/it][ASampling: 100%|██████████| 5/5 [03:09<00:00, 37.97s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:38<02:32, 38.02s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:53, 37.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.93s/it][A
+Sampling:  80%|████████  | 4/5 [02:31<00:37, 37.95s/it][A
+Sampling: 100%|██████████| 5/5 [03:09<00:00, 37.85s/it][ASampling: 100%|██████████| 5/5 [03:09<00:00, 37.89s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:38<02:32, 38.02s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:53, 37.92s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.77s/it][A
+Sampling:  80%|████████  | 4/5 [02:31<00:37, 37.86s/it][A
+Sampling: 100%|██████████| 5/5 [03:09<00:00, 37.90s/it][ASampling: 100%|██████████| 5/5 [03:09<00:00, 37.88s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:38<02:32, 38.11s/it][A
+Sampling:  40%|████      | 2/5 [01:16<01:53, 37.98s/it][A
+Sampling:  60%|██████    | 3/5 [01:53<01:15, 37.84s/it][A
+Sampling:  80%|████████  | 4/5 [02:30<00:37, 37.50s/it][A
+Sampling: 100%|██████████| 5/5 [03:07<00:00, 37.28s/it][ASampling: 100%|██████████| 5/5 [03:07<00:00, 37.51s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.17s/it][A
+Sampling:  40%|████      | 2/5 [01:14<01:51, 37.12s/it][A
+Sampling:  60%|██████    | 3/5 [01:51<01:14, 37.09s/it][A
+Sampling:  80%|████████  | 4/5 [02:28<00:37, 37.07s/it][A
+Sampling: 100%|██████████| 5/5 [03:05<00:00, 37.03s/it][ASampling: 100%|██████████| 5/5 [03:05<00:00, 37.06s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.07s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.98s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.99s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.95s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.93s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.95s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.89s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.92s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.91s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.90s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.74s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.80s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.82s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.89s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.84s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.68s/it][A
+Sampling:  80%|████████  | 4/5 [02:26<00:36, 36.73s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.76s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.76s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.91s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.89s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.87s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.86s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.86s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:26, 36.54s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.70s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.76s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.79s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.81s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.77s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.87s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.85s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.87s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.86s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.98s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.92s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.89s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.89s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.91s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 37.00s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.98s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.76s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.79s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.83s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.84s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.84s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.87s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.86s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.89s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.91s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.89s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.91s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.85s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.99s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.86s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.75s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.82s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.93s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.72s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.78s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.79s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.80s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.86s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.81s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.85s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.84s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.86s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.83s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.88s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.72s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.78s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.81s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.80s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.87s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.91s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.89s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.08s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.76s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.67s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.75s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.78s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.99s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.92s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.73s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.80s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.82s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.83s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:26, 36.59s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:49, 36.54s/it][A
+Sampling:  60%|██████    | 3/5 [01:49<01:13, 36.68s/it][A
+Sampling:  80%|████████  | 4/5 [02:26<00:36, 36.62s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.73s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.68s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.71s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.82s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.83s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.71s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.76s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.89s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.88s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.88s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.92s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.87s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.73s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.81s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.93s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.94s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.91s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.77s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.84s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.97s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.83s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.85s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.85s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.97s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.93s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.91s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.91s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.95s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.89s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.91s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.90s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.76s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.83s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.89s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.86s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.72s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.79s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:26, 36.58s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.76s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.66s/it][A
+Sampling:  80%|████████  | 4/5 [02:26<00:36, 36.56s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.70s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.67s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.97s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.96s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.95s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.93s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.94s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.94s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.90s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.90s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.92s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.98s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.93s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.89s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.77s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.84s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.92s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.87s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.88s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.02s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.97s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.97s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.95s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.94s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.95s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.94s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.88s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.88s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.93s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.85s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.68s/it][A
+Sampling:  80%|████████  | 4/5 [02:26<00:36, 36.62s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.69s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.71s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.97s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.76s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.83s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.84s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.98s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.94s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.92s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.88s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.04s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.69s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.80s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.85s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.85s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.95s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.94s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.79s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.86s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.96s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.76s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.72s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.77s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.79s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.98s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.95s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.94s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.94s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.95s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.99s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.93s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.77s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.85s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.01s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.96s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.95s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.77s/it][A
+Sampling: 100%|██████████| 5/5 [03:03<00:00, 36.69s/it][ASampling: 100%|██████████| 5/5 [03:03<00:00, 36.78s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:26, 36.57s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.81s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.85s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.91s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.92s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.88s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.01s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.98s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.99s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.98s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.98s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.02s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.97s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.97s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.96s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.97s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.97s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:26, 36.64s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.81s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.88s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.90s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.93s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.93s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.71s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.82s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.88s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.88s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.86s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 37.00s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.96s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.96s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.78s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.84s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.87s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.06s/it][A
+Sampling:  40%|████      | 2/5 [01:14<01:51, 37.01s/it][A
+Sampling:  60%|██████    | 3/5 [01:50<01:13, 36.99s/it][A
+Sampling:  80%|████████  | 4/5 [02:27<00:36, 36.97s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.83s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.90s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:36<02:27, 36.98s/it][A
+Sampling:  40%|████      | 2/5 [01:13<01:50, 36.95s/it][A
+Sampling:  60%|██████    | 3/5 [01:51<01:14, 37.15s/it][A
+Sampling:  80%|████████  | 4/5 [02:28<00:37, 37.06s/it][A
+Sampling: 100%|██████████| 5/5 [03:04<00:00, 36.89s/it][ASampling: 100%|██████████| 5/5 [03:04<00:00, 36.96s/it]
+2025-01-11 14:50:14,710 [asp.py] => total parameters: 173642241
+2025-01-11 14:50:14,711 [asp.py] => trainable parameters: 2044929
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 46080
+fc.sigma 1
+Class Inversion:   0%|          | 0/10 [3:06:47<?, ?it/s]
+anchor samples found
+2025-01-11 15:01:51,576 [asp.py] => Task 0, Epoch 1 => Loss 4.207, Train_accy 1.62, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 15:13:31,972 [asp.py] => Task 0, Epoch 2 => Loss 4.141, Train_accy 1.62, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 15:25:09,542 [asp.py] => Task 0, Epoch 3 => Loss 4.142, Train_accy 1.57, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 15:36:50,496 [asp.py] => Task 0, Epoch 4 => Loss 4.139, Train_accy 1.64, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 15:48:26,689 [asp.py] => Task 0, Epoch 5 => Loss 4.137, Train_accy 1.65, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 16:00:09,477 [asp.py] => Task 0, Epoch 6 => Loss 4.137, Train_accy 1.60, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 16:11:48,935 [asp.py] => Task 0, Epoch 7 => Loss 4.136, Train_accy 1.58, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 16:23:27,873 [asp.py] => Task 0, Epoch 8 => Loss 4.135, Train_accy 1.76, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 16:35:10,033 [asp.py] => Task 0, Epoch 9 => Loss 4.133, Train_accy 1.62, Test_curr_accy 1.67, Test_accy 1.67
+anchor samples found
+2025-01-11 16:46:51,201 [asp.py] => Task 0, Epoch 10 => Loss 4.131, Train_accy 1.62, Test_curr_accy 1.67, Test_accy 1.67
+2025-01-11 16:51:02,984 [trainer.py] => Top1 curve: [0.02]
+2025-01-11 16:51:02,984 [trainer.py] => Average Accuracy (Top1): 0.02   (Harmonic Accuracy): None (Old Acc): 0.016666666666666666 (New Acc): [] 
+
+2025-01-11 16:51:02,985 [trainer.py] => All params: 173642241
+2025-01-11 16:51:02,986 [trainer.py] => Trainable params: 2044929
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 16:51:33,917 [asp.py] => Learning on 60-65
+2025-01-11 16:51:33,936 [asp.py] => training set size: 25, fc construct set size: 25
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:35<02:21, 35.35s/it][A
+Sampling:  40%|████      | 2/5 [01:11<01:47, 35.88s/it][A
+Sampling:  60%|██████    | 3/5 [01:48<01:12, 36.16s/it][A
+Sampling:  80%|████████  | 4/5 [02:25<00:36, 36.51s/it][A
+Sampling: 100%|██████████| 5/5 [03:02<00:00, 36.73s/it][ASampling: 100%|██████████| 5/5 [03:02<00:00, 36.45s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:29, 37.44s/it][A
+Sampling:  40%|████      | 2/5 [01:14<01:52, 37.36s/it][A
+Sampling:  60%|██████    | 3/5 [01:52<01:14, 37.34s/it][A
+Sampling:  80%|████████  | 4/5 [02:29<00:37, 37.40s/it][A
+Sampling: 100%|██████████| 5/5 [03:06<00:00, 37.39s/it][ASampling: 100%|██████████| 5/5 [03:06<00:00, 37.38s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:29, 37.36s/it][A
+Sampling:  40%|████      | 2/5 [01:14<01:52, 37.49s/it][A
+Sampling:  60%|██████    | 3/5 [01:52<01:14, 37.49s/it][A
+Sampling:  80%|████████  | 4/5 [02:29<00:37, 37.49s/it][A
+Sampling: 100%|██████████| 5/5 [03:07<00:00, 37.50s/it][ASampling: 100%|██████████| 5/5 [03:07<00:00, 37.49s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:30, 37.69s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:52, 37.62s/it][A
+Sampling:  60%|██████    | 3/5 [01:52<01:15, 37.62s/it][A
+Sampling:  80%|████████  | 4/5 [02:30<00:37, 37.58s/it][A
+Sampling: 100%|██████████| 5/5 [03:07<00:00, 37.58s/it][ASampling: 100%|██████████| 5/5 [03:07<00:00, 37.59s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [00:37<02:30, 37.60s/it][A
+Sampling:  40%|████      | 2/5 [01:15<01:52, 37.57s/it][A
+Sampling:  60%|██████    | 3/5 [01:52<01:15, 37.58s/it][A
+Sampling:  80%|████████  | 4/5 [02:30<00:37, 37.57s/it][A
+Sampling: 100%|██████████| 5/5 [03:07<00:00, 37.47s/it][ASampling: 100%|██████████| 5/5 [03:07<00:00, 37.51s/it]
+2025-01-11 17:07:13,169 [asp.py] => total parameters: 173646081
+2025-01-11 17:07:13,170 [asp.py] => trainable parameters: 2048769
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 49920
+fc.sigma 1
+2025-01-11 17:07:46,878 [trainer.py] => Top1 curve: [0.02, 0.0]
+/mnt/share/yinjunhui/cl/FSCIL-Diff/trainer.py:148: RuntimeWarning: invalid value encountered in scalar divide
+  Hacc = 2 * old_acc * new_acc / (old_acc + new_acc)
+2025-01-11 17:07:46,879 [trainer.py] => Average Accuracy (Top1): 0.01   (Harmonic Accuracy): nan (Old Acc): 0.0 (New Acc): 0.0 
+
+2025-01-11 17:07:46,880 [trainer.py] => All params: 173646081
+2025-01-11 17:07:46,880 [trainer.py] => Trainable params: 2048769
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 17:08:35,372 [asp.py] => Learning on 65-70
+2025-01-11 17:08:35,405 [asp.py] => training set size: 25, fc construct set size: 25
+
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [00:35<02:20, 35.01s/it][A[A
+
+Sampling:  40%|████      | 2/5 [01:11<01:46, 35.62s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [01:47<01:12, 36.08s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [02:24<00:36, 36.42s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [03:01<00:00, 36.66s/it][A[ASampling: 100%|██████████| 5/5 [03:01<00:00, 36.34s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [00:37<02:29, 37.30s/it][A[A
+
+Sampling:  40%|████      | 2/5 [01:14<01:52, 37.44s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [01:52<01:14, 37.47s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [02:29<00:37, 37.45s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [03:06<00:00, 37.36s/it][A[ASampling: 100%|██████████| 5/5 [03:06<00:00, 37.39s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [00:37<02:28, 37.12s/it][A[A
+
+Sampling:  40%|████      | 2/5 [01:14<01:51, 37.24s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [01:51<01:14, 37.32s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [02:28<00:37, 37.19s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [03:05<00:00, 37.14s/it][A[ASampling: 100%|██████████| 5/5 [03:05<00:00, 37.18s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [00:37<02:30, 37.60s/it][A[A
+
+Sampling:  40%|████      | 2/5 [01:14<01:52, 37.48s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [01:52<01:14, 37.36s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [02:29<00:37, 37.29s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [03:06<00:00, 37.24s/it][A[ASampling: 100%|██████████| 5/5 [03:06<00:00, 37.31s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [00:37<02:29, 37.42s/it][A[A
+
+Sampling:  40%|████      | 2/5 [01:14<01:52, 37.45s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [01:52<01:15, 37.52s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [03:04<00:50, 50.98s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [04:48<00:00, 70.11s/it][A[ASampling: 100%|██████████| 5/5 [04:48<00:00, 57.63s/it]
+2025-01-11 17:25:52,603 [asp.py] => total parameters: 173649921
+2025-01-11 17:25:52,604 [asp.py] => trainable parameters: 2052609
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 53760
+fc.sigma 1
+2025-01-11 17:28:38,051 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4]
+2025-01-11 17:28:38,051 [trainer.py] => Average Accuracy (Top1): 0.14   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 2.8 
+
+2025-01-11 17:28:38,052 [trainer.py] => All params: 173649921
+2025-01-11 17:28:38,053 [trainer.py] => Trainable params: 2052609
+Class Inversion:   0%|          | 0/10 [37:10<?, ?it/s]
+Class Inversion:   0%|          | 0/10 [20:08<?, ?it/s]
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 17:29:28,538 [asp.py] => Learning on 70-75
+2025-01-11 17:29:28,562 [asp.py] => training set size: 25, fc construct set size: 25
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [02:20<09:21, 140.37s/it][A
+Sampling:  40%|████      | 2/5 [04:21<06:27, 129.21s/it][A
+Sampling:  60%|██████    | 3/5 [06:01<03:51, 115.68s/it][A
+Sampling:  80%|████████  | 4/5 [07:15<01:39, 99.38s/it] [A
+Sampling: 100%|██████████| 5/5 [08:29<00:00, 90.06s/it][ASampling: 100%|██████████| 5/5 [08:29<00:00, 101.85s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:13<04:53, 73.26s/it][A
+Sampling:  40%|████      | 2/5 [02:27<03:41, 73.88s/it][A
+Sampling:  60%|██████    | 3/5 [03:42<02:28, 74.23s/it][A
+Sampling:  80%|████████  | 4/5 [04:57<01:14, 74.50s/it][A
+Sampling: 100%|██████████| 5/5 [06:11<00:00, 74.35s/it][ASampling: 100%|██████████| 5/5 [06:11<00:00, 74.25s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:13<04:53, 73.30s/it][A
+Sampling:  40%|████      | 2/5 [02:26<03:40, 73.39s/it][A
+Sampling:  60%|██████    | 3/5 [03:41<02:28, 74.03s/it][A
+Sampling:  80%|████████  | 4/5 [04:55<01:14, 74.14s/it][A
+Sampling: 100%|██████████| 5/5 [06:21<00:00, 78.16s/it][ASampling: 100%|██████████| 5/5 [06:21<00:00, 76.23s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:35<06:21, 95.46s/it][A
+Sampling:  40%|████      | 2/5 [03:11<04:47, 95.97s/it][A
+Sampling:  60%|██████    | 3/5 [04:47<03:11, 95.85s/it][A
+Sampling:  80%|████████  | 4/5 [06:23<01:35, 95.92s/it][A
+Sampling: 100%|██████████| 5/5 [07:50<00:00, 92.69s/it][ASampling: 100%|██████████| 5/5 [07:50<00:00, 94.09s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:13<04:54, 73.75s/it][A
+Sampling:  40%|████      | 2/5 [02:28<03:42, 74.06s/it][A
+Sampling:  60%|██████    | 3/5 [03:40<02:27, 73.55s/it][A
+Sampling:  80%|████████  | 4/5 [04:55<01:14, 74.03s/it][A
+Sampling: 100%|██████████| 5/5 [06:09<00:00, 73.93s/it][ASampling: 100%|██████████| 5/5 [06:09<00:00, 73.90s/it]
+2025-01-11 18:04:45,229 [asp.py] => total parameters: 173653761
+2025-01-11 18:04:45,229 [asp.py] => trainable parameters: 2056449
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 57600
+fc.sigma 1
+2025-01-11 18:06:17,928 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37]
+2025-01-11 18:06:17,928 [trainer.py] => Average Accuracy (Top1): 0.1975   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 1.8666666666666665 
+
+2025-01-11 18:06:17,929 [trainer.py] => All params: 173653761
+2025-01-11 18:06:17,930 [trainer.py] => Trainable params: 2056449
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 18:06:49,552 [asp.py] => Learning on 75-80
+2025-01-11 18:06:49,579 [asp.py] => training set size: 25, fc construct set size: 25
+
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:13<04:52, 73.15s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:26<03:39, 73.01s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:39<02:26, 73.10s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [04:53<01:13, 73.46s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:07<00:00, 73.57s/it][A[ASampling: 100%|██████████| 5/5 [06:07<00:00, 73.41s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:31<06:06, 91.64s/it][A[A
+
+Sampling:  40%|████      | 2/5 [03:05<04:39, 93.04s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [04:41<03:09, 94.51s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [06:17<01:34, 94.82s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [07:53<00:00, 95.33s/it][A[ASampling: 100%|██████████| 5/5 [07:53<00:00, 94.69s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:20<05:23, 80.84s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:34<03:49, 76.66s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:48<02:31, 75.51s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [05:03<01:15, 75.07s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:17<00:00, 74.80s/it][A[ASampling: 100%|██████████| 5/5 [06:17<00:00, 75.49s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:13<04:55, 73.82s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:26<03:39, 73.29s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:39<02:26, 73.23s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [04:53<01:13, 73.46s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:07<00:00, 73.46s/it][A[ASampling: 100%|██████████| 5/5 [06:07<00:00, 73.43s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:14<04:56, 74.07s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:27<03:40, 73.66s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:41<02:27, 73.67s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [05:01<01:16, 76.49s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:34<00:00, 82.27s/it][A[ASampling: 100%|██████████| 5/5 [06:34<00:00, 78.89s/it]
+2025-01-11 18:39:59,252 [asp.py] => total parameters: 173657601
+2025-01-11 18:39:59,253 [asp.py] => trainable parameters: 2060289
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 61440
+fc.sigma 1
+2025-01-11 18:41:56,866 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37, 0.35]
+2025-01-11 18:41:56,867 [trainer.py] => Average Accuracy (Top1): 0.22800000000000004   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 1.4 
+
+2025-01-11 18:41:56,868 [trainer.py] => All params: 173657601
+2025-01-11 18:41:56,868 [trainer.py] => Trainable params: 2060289
+Class Inversion:   0%|          | 0/10 [1:12:35<?, ?it/s]
+Class Inversion:   0%|          | 0/10 [35:17<?, ?it/s]
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 18:42:15,427 [asp.py] => Learning on 80-85
+2025-01-11 18:42:15,448 [asp.py] => training set size: 25, fc construct set size: 25
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:35<06:20, 95.03s/it][A
+Sampling:  40%|████      | 2/5 [03:10<04:46, 95.38s/it][A
+Sampling:  60%|██████    | 3/5 [04:25<02:52, 86.13s/it][A
+Sampling:  80%|████████  | 4/5 [05:39<01:21, 81.25s/it][A
+Sampling: 100%|██████████| 5/5 [06:53<00:00, 78.61s/it][ASampling: 100%|██████████| 5/5 [06:53<00:00, 82.70s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:14<04:57, 74.49s/it][A
+Sampling:  40%|████      | 2/5 [02:28<03:43, 74.46s/it][A
+Sampling:  60%|██████    | 3/5 [03:43<02:28, 74.44s/it][A
+Sampling:  80%|████████  | 4/5 [04:57<01:14, 74.49s/it][A
+Sampling: 100%|██████████| 5/5 [06:12<00:00, 74.39s/it][ASampling: 100%|██████████| 5/5 [06:12<00:00, 74.42s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:14<04:56, 74.14s/it][A
+Sampling:  40%|████      | 2/5 [02:27<03:40, 73.57s/it][A
+Sampling:  60%|██████    | 3/5 [03:41<02:27, 73.82s/it][A
+Sampling:  80%|████████  | 4/5 [04:56<01:14, 74.21s/it][A
+Sampling: 100%|██████████| 5/5 [06:11<00:00, 74.47s/it][ASampling: 100%|██████████| 5/5 [06:11<00:00, 74.23s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:28<05:52, 88.08s/it][A
+Sampling:  40%|████      | 2/5 [03:03<04:36, 92.25s/it][A
+Sampling:  60%|██████    | 3/5 [04:38<03:06, 93.45s/it][A
+Sampling:  80%|████████  | 4/5 [06:13<01:34, 94.33s/it][A
+Sampling: 100%|██████████| 5/5 [07:46<00:00, 93.90s/it][ASampling: 100%|██████████| 5/5 [07:46<00:00, 93.39s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:26<05:47, 86.98s/it][A
+Sampling:  40%|████      | 2/5 [02:40<03:57, 79.32s/it][A
+Sampling:  60%|██████    | 3/5 [03:55<02:34, 77.03s/it][A
+Sampling:  80%|████████  | 4/5 [05:09<01:15, 75.80s/it][A
+Sampling: 100%|██████████| 5/5 [06:22<00:00, 75.05s/it][ASampling: 100%|██████████| 5/5 [06:22<00:00, 76.57s/it]
+2025-01-11 19:15:54,184 [asp.py] => total parameters: 173661441
+2025-01-11 19:15:54,185 [asp.py] => trainable parameters: 2064129
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 65280
+fc.sigma 1
+2025-01-11 19:17:38,318 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37, 0.35, 0.33]
+2025-01-11 19:17:38,319 [trainer.py] => Average Accuracy (Top1): 0.24500000000000002   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 1.1199999999999999 
+
+2025-01-11 19:17:38,320 [trainer.py] => All params: 173661441
+2025-01-11 19:17:38,320 [trainer.py] => Trainable params: 2064129
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 19:18:17,106 [asp.py] => Learning on 85-90
+2025-01-11 19:18:17,146 [asp.py] => training set size: 25, fc construct set size: 25
+
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s][A
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:13<04:55, 73.84s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:27<03:41, 73.89s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:41<02:27, 73.77s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [04:55<01:13, 73.75s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:09<00:00, 73.87s/it][A[ASampling: 100%|██████████| 5/5 [06:09<00:00, 73.84s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:21<05:24, 81.05s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:54<04:24, 88.10s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [04:30<03:04, 92.01s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [06:08<01:34, 94.26s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [07:45<00:00, 95.34s/it][A[ASampling: 100%|██████████| 5/5 [07:45<00:00, 93.14s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:32<06:08, 92.19s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:46<04:05, 81.68s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:59<02:35, 77.59s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [05:13<01:16, 76.26s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:27<00:00, 75.50s/it][A[ASampling: 100%|██████████| 5/5 [06:27<00:00, 77.52s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:13<04:53, 73.37s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:27<03:41, 73.86s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:41<02:27, 73.75s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [04:54<01:13, 73.76s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:08<00:00, 73.78s/it][A[ASampling: 100%|██████████| 5/5 [06:08<00:00, 73.76s/it]
+
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A[A
+
+Sampling:  20%|██        | 1/5 [01:14<04:57, 74.32s/it][A[A
+
+Sampling:  40%|████      | 2/5 [02:27<03:41, 73.74s/it][A[A
+
+Sampling:  60%|██████    | 3/5 [03:41<02:27, 73.91s/it][A[A
+
+Sampling:  80%|████████  | 4/5 [04:56<01:14, 74.21s/it][A[A
+
+Sampling: 100%|██████████| 5/5 [06:25<00:00, 79.71s/it][A[ASampling: 100%|██████████| 5/5 [06:25<00:00, 77.18s/it]
+2025-01-11 19:51:25,848 [asp.py] => total parameters: 173665281
+2025-01-11 19:51:25,849 [asp.py] => trainable parameters: 2067969
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 69120
+fc.sigma 1
+2025-01-11 19:53:31,701 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37, 0.35, 0.33, 0.31]
+2025-01-11 19:53:31,701 [trainer.py] => Average Accuracy (Top1): 0.25428571428571434   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 0.9333333333333332 
+
+2025-01-11 19:53:31,702 [trainer.py] => All params: 173665281
+2025-01-11 19:53:31,703 [trainer.py] => Trainable params: 2067969
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 19:53:59,671 [asp.py] => Learning on 90-95
+2025-01-11 19:53:59,700 [asp.py] => training set size: 25, fc construct set size: 25
+
+
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s][A[AClass Inversion:   0%|          | 0/10 [1:11:45<?, ?it/s]
+Class Inversion:   0%|          | 0/10 [35:43<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s]Sampling:  20%|██        | 1/5 [01:36<06:26, 96.52s/it]Sampling:  40%|████      | 2/5 [03:10<04:45, 95.25s/it]Sampling:  60%|██████    | 3/5 [04:24<02:50, 85.37s/it]Sampling:  80%|████████  | 4/5 [05:36<01:20, 80.01s/it]Sampling: 100%|██████████| 5/5 [06:48<00:00, 77.17s/it]Sampling: 100%|██████████| 5/5 [06:48<00:00, 81.68s/it]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s]Sampling:  20%|██        | 1/5 [01:10<04:40, 70.05s/it]Sampling:  40%|████      | 2/5 [02:20<03:30, 70.19s/it]Sampling:  60%|██████    | 3/5 [03:32<02:21, 70.93s/it]Sampling:  80%|████████  | 4/5 [04:43<01:11, 71.10s/it]Sampling: 100%|██████████| 5/5 [05:54<00:00, 71.08s/it]Sampling: 100%|██████████| 5/5 [05:54<00:00, 70.91s/it]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s]Sampling:  20%|██        | 1/5 [01:11<04:45, 71.45s/it]Sampling:  40%|████      | 2/5 [02:23<03:35, 71.72s/it]Sampling:  60%|██████    | 3/5 [03:32<02:21, 70.70s/it]Sampling:  80%|████████  | 4/5 [04:43<01:10, 70.62s/it]Sampling: 100%|██████████| 5/5 [05:54<00:00, 70.68s/it]Sampling: 100%|██████████| 5/5 [05:54<00:00, 70.83s/it]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s]Sampling:  20%|██        | 1/5 [01:11<04:47, 71.99s/it]Sampling:  40%|████      | 2/5 [02:45<04:14, 84.70s/it]Sampling:  60%|██████    | 3/5 [04:17<02:56, 88.09s/it]Sampling:  80%|████████  | 4/5 [05:50<01:29, 89.91s/it]Sampling: 100%|██████████| 5/5 [07:24<00:00, 91.47s/it]Sampling: 100%|██████████| 5/5 [07:24<00:00, 88.93s/it]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s]Sampling:  20%|██        | 1/5 [01:33<06:14, 93.53s/it]Sampling:  40%|████      | 2/5 [02:47<04:06, 82.26s/it]Sampling:  60%|██████    | 3/5 [03:59<02:34, 77.20s/it]Sampling:  80%|████████  | 4/5 [05:09<01:14, 74.64s/it]Sampling: 100%|██████████| 5/5 [06:20<00:00, 73.17s/it]Sampling: 100%|██████████| 5/5 [06:20<00:00, 76.07s/it]
+2025-01-11 20:26:33,723 [asp.py] => total parameters: 173669121
+2025-01-11 20:26:33,724 [asp.py] => trainable parameters: 2071809
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 72960
+fc.sigma 1
+2025-01-11 20:28:24,860 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37, 0.35, 0.33, 0.31, 0.29]
+2025-01-11 20:28:24,861 [trainer.py] => Average Accuracy (Top1): 0.25875000000000004   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 0.7999999999999999 
+
+2025-01-11 20:28:24,862 [trainer.py] => All params: 173669121
+2025-01-11 20:28:24,863 [trainer.py] => Trainable params: 2071809
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 872.30 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 16, 16) = 1024 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Restored from models/ldm/text2img-large/model.ckpt with 0 missing and 2 unexpected keys
+Unexpected Keys: ['model_ema.decay', 'model_ema.num_updates']
+Setting learning rate to 2.00e-02 =  4 (batchsize) * 5.00e-03 (base_lr)
+2025-01-11 20:28:53,811 [asp.py] => Learning on 95-100
+2025-01-11 20:28:53,835 [asp.py] => training set size: 25, fc construct set size: 25
+Class Inversion:   0%|          | 0/10 [00:00<?, ?it/s]
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:11<04:44, 71.11s/it][A
+Sampling:  40%|████      | 2/5 [02:21<03:31, 70.46s/it][A
+Sampling:  60%|██████    | 3/5 [03:31<02:20, 70.39s/it][A
+Sampling:  80%|████████  | 4/5 [04:40<01:10, 70.00s/it][A
+Sampling: 100%|██████████| 5/5 [05:51<00:00, 70.15s/it][ASampling: 100%|██████████| 5/5 [05:51<00:00, 70.25s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:10<04:42, 70.71s/it][A
+Sampling:  40%|████      | 2/5 [02:24<03:37, 72.43s/it][A
+Sampling:  60%|██████    | 3/5 [03:56<02:43, 81.61s/it][A
+Sampling:  80%|████████  | 4/5 [05:32<01:27, 87.14s/it][A
+Sampling: 100%|██████████| 5/5 [07:06<00:00, 89.70s/it][ASampling: 100%|██████████| 5/5 [07:06<00:00, 85.35s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:34<06:16, 94.08s/it][A
+Sampling:  40%|████      | 2/5 [03:08<04:42, 94.13s/it][A
+Sampling:  60%|██████    | 3/5 [04:16<02:44, 82.45s/it][A
+Sampling:  80%|████████  | 4/5 [05:28<01:18, 78.21s/it][A
+Sampling: 100%|██████████| 5/5 [06:40<00:00, 75.98s/it][ASampling: 100%|██████████| 5/5 [06:40<00:00, 80.11s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:11<04:45, 71.47s/it][A
+Sampling:  40%|████      | 2/5 [02:22<03:34, 71.43s/it][A
+Sampling:  60%|██████    | 3/5 [03:33<02:22, 71.18s/it][A
+Sampling:  80%|████████  | 4/5 [04:43<01:10, 70.71s/it][A
+Sampling: 100%|██████████| 5/5 [05:55<00:00, 70.96s/it][ASampling: 100%|██████████| 5/5 [05:55<00:00, 71.03s/it]
+
+Sampling:   0%|          | 0/5 [00:00<?, ?it/s][A
+Sampling:  20%|██        | 1/5 [01:10<04:42, 70.64s/it][A
+Sampling:  40%|████      | 2/5 [02:22<03:33, 71.12s/it][A
+Sampling:  60%|██████    | 3/5 [03:34<02:23, 71.70s/it][A
+Sampling:  80%|████████  | 4/5 [04:45<01:11, 71.41s/it][A
+Sampling: 100%|██████████| 5/5 [05:56<00:00, 71.11s/it][ASampling: 100%|██████████| 5/5 [05:56<00:00, 71.21s/it]
+2025-01-11 21:00:35,980 [asp.py] => total parameters: 173672961
+2025-01-11 21:00:35,981 [asp.py] => trainable parameters: 2075649
+backbone.TIP 27648
+backbone.Prompt_Encoder.fc_mu.0.weight 393216
+backbone.Prompt_Encoder.fc_mu.0.bias 256
+backbone.Prompt_Encoder.fc_mu.1.weight 589824
+backbone.Prompt_Encoder.fc_mu.1.bias 2304
+backbone.Prompt_Encoder.fc_std.0.weight 393216
+backbone.Prompt_Encoder.fc_std.0.bias 256
+backbone.Prompt_Encoder.fc_std.1.weight 589824
+backbone.Prompt_Encoder.fc_std.1.bias 2304
+fc.weight 76800
+fc.sigma 1
+2025-01-11 21:02:50,462 [trainer.py] => Top1 curve: [0.02, 0.0, 0.4, 0.37, 0.35, 0.33, 0.31, 0.29, 0.28]
+2025-01-11 21:02:50,463 [trainer.py] => Average Accuracy (Top1): 0.2611111111111112   (Harmonic Accuracy): 0.0 (Old Acc): 0.0 (New Acc): 0.7 
+
+2025-01-11 21:02:50,463 [trainer.py] => 
+
+Class Inversion:   0%|          | 0/10 [1:08:49<?, ?it/s]
+Class Inversion:   0%|          | 0/10 [33:54<?, ?it/s]
